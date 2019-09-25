@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.201" fx:controller="saacsos.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+   <children>
+      <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField GridPane.rowIndex="1" />
+      <TextField fx:id="inputText" GridPane.rowIndex="1" />
+      <Button fx:id="appendBtn" mnemonicParsing="false" onAction="#appendText" text="Append Text" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button fx:id="saveBtn" mnemonicParsing="false" onAction="#saveFile" text="Save" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <TextArea fx:id="showText" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
+   </children>
+</GridPane>
